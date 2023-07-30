@@ -1,0 +1,224 @@
+/* Resetear estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color:blueviolet; /* Morado */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: blueviolet; /* Morado */
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: mediumorchid; /* Rosa */
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: mediumorchid; /* Morado */
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center, justify;
+    color: blueviolet;/* Morado*/
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color:blueviolet; /* Morado */
+    color: #fff;
+    padding: 1rem;
+}
+
+#segundotexto{
+    margin: 0.5cm;
+}
+
+#preguntas{
+    text-align: center;
+    color: rebeccapurple;
+}
+
+/* Estilos para la clase "header-flex" */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos para el h1 */
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para la clase "imagen" */
+.imagen {
+    margin-left: 20px;
+}
+
+.imagen img {
+    max-width: 150px; /* Tamaño máximo de la imagen (ajusta según tus necesidades) */
+}
+
+
+  
+/* Estilos para ¿que quiero lucir?*/
+
+.center{
+    text-align: center;
+    padding: 1rem;
+    color: rebeccapurple;
+
+}
+
+
+/* Estilos para el aside */
+aside {
+    color: rebeccapurple;
+    padding: 40px;
+    border-radius: 5px;    
+    flex: 1;
+    flex-basis: 50%; /* Ajusta el ancho del aside según tus necesidades */
+    margin-left: 20px;
+  }
+  
+  aside h2 {
+    margin-top: 0;
+  }
+  
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para alinear el contenido en una columna */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section {
+    flex: 1;
+  }
+  
+  .imagen-izquierda {
+    flex-basis: 50%;
+  }
+  
+
+/* Estilos para el tooltip */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -220px; /* Ajusta el valor según la altura del tooltip */
+    left: 250%;
+    transform: translateX(-50%);
+    width: 400px; /* Ancho del tooltip */
+    height: 150px; /* Altura del tooltip */
+    padding: 8px;
+    background-color: #fff; /* Fondo blanco */
+    color: blueviolet; /* Letras blueviolet */
+    border: 1px solid blueviolet; /* Borde del tooltip */
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s, visibility 0.2s;
+    text-align: center; /* Centrar el texto en el tooltip */
+    font-size: 14px; /* Tamaño de fuente del texto en el tooltip */
+    line-height: 1.5; /* Espaciado de línea en el tooltip */
+  }
+  
+  .tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .tooltip2 {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .tooltip2::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -220px; /* Ajusta el valor según la altura del tooltip */
+    left: 250%;
+    transform: translateX(-50%);
+    width: 400px; /* Ancho del tooltip */
+    height: 120px; /* Altura del tooltip */
+    padding: 8px;
+    background-color: #fff; /* Fondo blanco */
+    color: blueviolet; /* Letras blueviolet */
+    border: 1px solid blueviolet; /* Borde del tooltip */
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s, visibility 0.2s;
+    text-align: center; /* Centrar el texto en el tooltip */
+    font-size: 14px; /* Tamaño de fuente del texto en el tooltip */
+    line-height: 1.5; /* Espaciado de línea en el tooltip */
+  }
+  
+  .tooltip2:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .textocentral{
+    text-align: justify, center;
+}
